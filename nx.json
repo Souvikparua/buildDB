@@ -1,0 +1,15 @@
+{
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "nx-cloud",
+      "options": {
+        "cacheableOperations": ["build", "test", "check:types"]
+      }
+    }
+  },
+  "targetDefaults": {
+    "build": {
+      "inputs": ["{workspaceRoot}/scripts/*", "{workspaceRoot}/lerna.json"]
+    }
+  }
+}
